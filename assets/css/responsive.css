@@ -1,0 +1,119 @@
+/* TABLET */
+@media (max-width: 768px) {
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .feature_bg {
+    padding: 30px;
+  }
+
+  .single_why_choose {
+    margin-bottom: 50px;
+  }
+
+  .single_why_choose h2 {
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  .case_content,
+  .case_content_top {
+    margin-bottom: 50px;
+  }
+
+  .portfolio_filter ul {
+    width: 100%;
+  }
+
+  .case_content p {
+    padding-right: 0;
+  }
+
+  .our-team,
+  .pricingTable {
+    margin-bottom: 30px;
+  }
+
+  .project_dec img,
+  .single_project img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .marketing_content h2 {
+    font-size: 28px;
+  }
+
+  .single-project {
+    margin-top: 40px;
+  }
+
+  .newsletter-form {
+    padding-top: 100px;
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .section-title p {
+    width: 90%;
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .single_about_content h2 {
+    font-size: 26px;
+  }
+
+  .case_content_top h2 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .portfolio_filter ul li {
+    margin-bottom: 10px;
+  }
+
+  .case_content_top_img img {
+    margin-top: 40px;
+  }
+
+  .testimonial_img img {
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .hire_img {
+    margin-bottom: 40px;
+  }
+
+  .single_address {
+    margin-bottom: 20px;
+  }
+
+  .single_footer {
+    padding-top: 20px;
+  }
+
+  .newsletter-form {
+    padding-top: 40px;
+  }
+}
