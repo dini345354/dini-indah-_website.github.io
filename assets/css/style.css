@@ -13,7 +13,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    background: #9cbdf2;
+    background: #fff;
     overflow-x: hidden;
 }
 html, body { height: 100%; position: relative; }
@@ -30,7 +30,7 @@ a {
     text-decoration: none;
     transition: all 0.2s ease 0s;
 }
-a:hover { color: #fff; text-decoration: none; }
+a:hover { color: #FF69B4; text-decoration: none; }
 a:focus { outline: none; text-decoration: none; }
 p { margin-bottom: 0; }
 ul, li { margin: 0; padding: 0; }
@@ -60,7 +60,7 @@ ul, li { margin: 0; padding: 0; }
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #ffaa17;
+    background: #FF69B4;
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -89,7 +89,7 @@ h2.section-title-white, p.section-title-white { color: #fff; }
 
 /* Scroll to Top */
 .topcontrol {
-    background: #ffaa17;
+    background: #FF69B4;
     border-radius: 30px;
     bottom: 5px;
     color: #fff;
@@ -102,20 +102,20 @@ h2.section-title-white, p.section-title-white { color: #fff; }
     text-align: center;
     width: 50px;
 }
-.topcontrol:hover { background: #222; color: #fff; }
+.topcontrol:hover { background: #FF1493; color: #fff; }
 @media (max-width: 768px) { .topcontrol { display: none; } }
 
 /* Button */
 .btn_one {
     background: #fff;
-    border: 2px solid #1b2032;
-    color: #1b2032;
+    border: 2px solid #FF69B4;
+    color: #FF69B4;
     padding: 8px 30px;
     border-radius: 30px;
     transition: 0.3s;
     display: inline-block;
 }
-.btn_one:hover { background: #ffaa17; border-color: #ffaa17; color: #fff; }
+.btn_one:hover { background: #FF69B4; border-color: #FF69B4; color: #fff; }
 
 /* --------------------------------------------
    02. HOME DESIGN (TULISAN BESAR BOLD PUTIH)
@@ -145,7 +145,6 @@ h2.section-title-white, p.section-title-white { color: #fff; }
     transform: translateY(-50%);
 }
 video { min-width: 100%; height: 100%; }
-
 
 .slider-caption h2 {
     color: #ffffff !important;
@@ -189,7 +188,7 @@ video { min-width: 100%; height: 100%; }
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 105, 180, 0.7);
 }
 .feature_area .container { position: relative; z-index: 2; }
 .feature_bg {
@@ -197,7 +196,7 @@ video { min-width: 100%; height: 100%; }
     background: #fff;
     border-radius: 10px;
     margin-top: -100px;
-    box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+    box-shadow: 0 10px 40px -10px rgba(255,105,180,.2);
 }
 @media (max-width: 768px) { .feature_area, .feature_bg { margin-top: 0; } }
 .single_feature {
@@ -209,7 +208,7 @@ video { min-width: 100%; height: 100%; }
 }
 .single_feature:hover {
     background: #fff;
-    box-shadow: 0 60px 60px rgba(0,0,0,0.1);
+    box-shadow: 0 60px 60px rgba(255,105,180,0.1);
     transform: translateY(-10px);
 }
 .single_feature img { width: 60px; margin-bottom: 25px; }
@@ -219,7 +218,7 @@ video { min-width: 100%; height: 100%; }
    04. COUNTER / MATERI (LAMA)
 -------------------------------------------- */
 .counter_feature {
-    background: #032646;
+    background: #FF69B4;
     position: relative;
     margin-bottom: 80px;
 }
@@ -254,7 +253,7 @@ video { min-width: 100%; height: 100%; }
     background-position: center;
 }
 .video_btn a {
-    background: rgba(203, 186, 186, 0.925);
+    background: rgba(255,255,255,0.2);
     border: 4px solid #fff;
     border-radius: 100px;
     color: #fff;
@@ -265,7 +264,7 @@ video { min-width: 100%; height: 100%; }
     width: 100px;
     transition: 0.3s;
 }
-.video_btn a:hover { border-color: #ffaa17; }
+.video_btn a:hover { border-color: #FF1493; }
 @media (max-width: 768px) {
     .single-project { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); margin-bottom: 30px; padding-bottom: 30px; }
     .single-project:last-child { border-bottom: none; }
@@ -285,81 +284,158 @@ video { min-width: 100%; height: 100%; }
 .single_why_choose p { margin-bottom: 30px; }
 
 /* --------------------------------------------
-   06. PORTFOLIO / KEUNGGULAN
+   06. PORTFOLIO / KEUNGGULAN (DIPERBAIKI)
 -------------------------------------------- */
-.portfolio_area { overflow: hidden; }
-.portfolio_filter {
-    text-align: center;
-    margin-bottom: 60px;
+.portfolio_area { 
+    overflow: hidden; 
+    background: #fef5f8;
 }
-.portfolio_filter ul li {
-    display: inline-block;
-    cursor: pointer;
-    padding: 0 15px;
-    font-size: 16px;
-    color: #252d35;
-    border-right: 2px solid #eee;
+.portfolio_area .container {
+    max-width: 1200px;
 }
-.portfolio_filter ul li:last-child { border-right: 0; }
-.portfolio_filter .active { color: #ffaa17; }
+
+.portfolio-item {
+    margin-bottom: 30px;
+    list-style: none;
+}
+
 .single-gallery {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.4s ease;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
 }
-.single-gallery:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
-.single-gallery:before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    transition: .5s;
-    opacity: 0;
-    z-index: 1;
+
+.single-gallery:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255,105,180,0.25);
 }
-.single-gallery:hover:before { opacity: 1; }
+
 .single-gallery img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     transition: transform 0.4s ease;
 }
-.single-gallery:hover img { transform: scale(1.05); }
-.gallery_enlarge_icon {
-    background: #ffaa17;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border-radius: 50%;
-    z-index: 2;
-    opacity: 0;
-    transition: .5s;
+
+.single-gallery:hover img {
+    transform: scale(1.05);
 }
-.single-gallery:hover .gallery_enlarge_icon { opacity: 1; }
-.single-gallery h4 {
+
+.single-gallery:before {
+    content: '';
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    padding: 20px;
-    margin: 0;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
+    background: linear-gradient(to top, rgba(255,105,180,0.9), rgba(255,105,180,0.4));
     opacity: 0;
-    transition: all 0.3s ease;
-    z-index: 2;
+    transition: 0.3s;
+    z-index: 1;
+    border-radius: 15px;
 }
-.single-gallery:hover h4 { opacity: 1; }
-.portfolio-item { margin-bottom: 30px; }
+
+.single-gallery:hover:before {
+    opacity: 1;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.single-gallery:hover .gallery-caption {
+    transform: translateY(0);
+    bottom: 30%;
+}
+
+.gallery-caption h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s ease 0.1s;
+}
+
+.gallery-caption p {
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s ease 0.15s;
+}
+
+.single-gallery:hover .gallery-caption h4,
+.single-gallery:hover .gallery-caption p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery_enlarge_icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    color: #FF69B4;
+    border-radius: 50%;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.single-gallery:hover .gallery_enlarge_icon {
+    opacity: 1;
+    top: 20px;
+}
+
+.gallery_enlarge_icon:hover {
+    background: #FF69B4;
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Layout 2 baris untuk keunggulan */
+.portfolio_area .row {
+    margin-bottom: 0;
+}
+
+/* Responsive untuk tablet */
+@media (max-width: 768px) {
+    .single-gallery img {
+        height: 200px;
+    }
+    .gallery-caption h4 {
+        font-size: 16px;
+    }
+    .gallery-caption p {
+        font-size: 12px;
+    }
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .single-gallery img {
+        height: 180px;
+    }
+}
 
 /* --------------------------------------------
    07. SKILL / JADWAL
@@ -373,8 +449,8 @@ video { min-width: 100%; height: 100%; }
     background-position: center;
 }
 .skills_area:before {
-    background: #0e5ca6;
-    opacity: 0.2;
+    background: #FF69B4;
+    opacity: 0.15;
     position: absolute;
     content: "";
     inset: 0;
@@ -385,11 +461,13 @@ video { min-width: 100%; height: 100%; }
     border-radius: 20px;
     position: relative;
     margin-bottom: -80px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 .skill_content h2 {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 30px;
+    color: #FF69B4;
 }
 .progress-bar-text {
     font-size: 16px;
@@ -404,7 +482,7 @@ video { min-width: 100%; height: 100%; }
     border-radius: 30px;
 }
 .progress-bar > span {
-    background: #ffaa17;
+    background: #FF69B4;
     display: block;
     height: 100%;
     width: 0;
@@ -414,10 +492,17 @@ video { min-width: 100%; height: 100%; }
 /* --------------------------------------------
    08. PROMOTION / TESTIMONI
 -------------------------------------------- */
+.promotional_area {
+    background: #fef5f8;
+}
 .promotional_content {
     text-align: center;
 }
-.promotional_content img { max-width: 100%; }
+.promotional_content img { 
+    max-width: 80%; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 .promotional_content p {
     width: 70%;
     margin: 40px auto 0;
@@ -428,35 +513,45 @@ video { min-width: 100%; height: 100%; }
 /* --------------------------------------------
    09. CONTACT
 -------------------------------------------- */
-.contact_area { background: #0e5ca6; }
+.contact_area { background: #FF69B4; }
 .contact input, .contact textarea {
     background: #fff;
     border: none;
-    border-radius: 0;
+    border-radius: 8px;
     color: #1b2032;
-    font-size: 18px;
-    padding: 20px;
+    font-size: 16px;
+    padding: 15px 20px;
     width: 100%;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
 }
 .contact_btn {
-    background: #ffaa17;
+    background: #fff;
     display: inline-block;
-    color: #fff;
-    border: 2px solid #ffaa17;
+    color: #FF69B4;
+    border: 2px solid #fff;
     padding: 12px 40px;
+    border-radius: 50px;
+    font-weight: 600;
     transition: 0.3s;
 }
-.contact_btn:hover { background: #232a34; border-color: #232a34; }
+.contact_btn:hover { background: #FF1493; border-color: #FF1493; color: #fff; }
 
 /* --------------------------------------------
    10. PARTNER / MEDSOS
 -------------------------------------------- */
-.partner-logo { padding-bottom: 40px; }
+.partner-logo { 
+    padding: 60px 0; 
+    background: #fff;
+}
 .single_logo a img {
-    width: 100px;
+    width: 80px;
     transition: 0.2s;
+    opacity: 0.7;
+}
+.single_logo a img:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* --------------------------------------------
@@ -465,31 +560,35 @@ video { min-width: 100%; height: 100%; }
 .footer {
     padding-bottom: 50px;
     padding-top: 80px;
+    background: #c71585;
     background-size: cover;
 }
-.footer_logo img { width: 150px; }
+.footer_logo img { width: 150px; margin-bottom: 20px; }
 .footer_logo p, .single_footer h4, .single_footer ul li a, .footer_copyright p { color: #fff; }
 .single_footer ul li a {
     line-height: 36px;
     font-size: 15px;
     text-transform: capitalize;
 }
-.single_footer ul li a:hover { color: #ffaa17; }
+.single_footer ul li a:hover { color: #FFB6C1; }
 .newsletter-form input {
     width: 100%;
     height: 50px;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
+    border-radius: 8px;
 }
 .subs_btn {
-    background: #ffaa17;
-    border: 2px solid #ffaa17;
+    background: #FF69B4;
+    border: 2px solid #FF69B4;
     color: #fff;
     padding: 12px;
     width: 100%;
+    border-radius: 8px;
     transition: 0.3s;
+    margin-top: 10px;
 }
-.subs_btn:hover { background: #fff; color: #ffaa17; border-color: #fff; }
+.subs_btn:hover { background: #fff; color: #FF69B4; border-color: #fff; }
 .social_profile ul li { float: left; }
 .social_profile ul li a {
     margin-right: 10px;
@@ -499,29 +598,39 @@ video { min-width: 100%; height: 100%; }
     width: 40px;
     height: 40px;
     line-height: 40px;
-    border-radius: 30px;
+    border-radius: 50%;
     text-align: center;
+    transition: 0.3s;
 }
 .f_instagram { background: #E4405F; }
 .f_github { background: #333333; }
 .f_email { background: #D44638; }
 .f_whatsapp { background: #25D366; }
 
-/* Hover effect */
 .f_instagram:hover, 
 .f_github:hover, 
 .f_email:hover, 
 .f_whatsapp:hover {
     background: #fff;
-    color: #333 !important;
     transform: translateY(-3px);
+}
+.f_instagram:hover { color: #E4405F !important; }
+.f_github:hover { color: #333333 !important; }
+.f_email:hover { color: #D44638 !important; }
+.f_whatsapp:hover { color: #25D366 !important; }
+
+.footer_copyright {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 30px;
+    margin-top: 60px;
+    text-align: center;
 }
 
 /* --------------------------------------------
    12. CUSTOM MATERI (BARU) - DENGAN FOTO
 -------------------------------------------- */
 .materi_area {
-    background: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 100%);
+    background: linear-gradient(135deg, #fff0f5 0%, #ffe4ec 100%);
     padding: 80px 0;
 }
 .materi-card {
@@ -530,12 +639,12 @@ video { min-width: 100%; height: 100%; }
     padding: 30px 20px;
     text-align: center;
     transition: all 0.4s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(255,105,180,0.08);
     margin-bottom: 30px;
 }
 .materi-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(255,105,180,0.2);
 }
 .materi-img {
     position: relative;
@@ -560,7 +669,7 @@ video { min-width: 100%; height: 100%; }
     right: -10px;
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #FF69B4, #FF1493);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -590,11 +699,11 @@ video { min-width: 100%; height: 100%; }
     justify-content: center;
     gap: 20px;
     padding-top: 15px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ffe0ec;
     margin-top: 10px;
 }
-.materi-detail span { font-size: 12px; color: #6b3030; }
-.video-text { margin-top: 15px; font-size: 16px; color: #555; font-weight: 500; }
+.materi-detail span { font-size: 12px; color: #FF69B4; }
+.video-text { margin-top: 15px; font-size: 16px; color: #FF69B4; font-weight: 500; }
 
 @media (max-width: 768px) {
     .materi-card { padding: 20px 15px; }
@@ -602,26 +711,4 @@ video { min-width: 100%; height: 100%; }
     .materi-badge { width: 38px; height: 38px; font-size: 15px; }
     .materi-card h3 { font-size: 18px; }
     .materi-icon { font-size: 30px; }
-}
-/* Layout 2 baris untuk keunggulan */
-.portfolio_area .row {
-    margin-bottom: 30px;
-}
-
-.portfolio_area .row:last-child {
-    margin-bottom: 0;
-}
-
-/* Responsive untuk tablet */
-@media (max-width: 768px) {
-    .portfolio_area .row .col-md-6 {
-        margin-bottom: 20px;
-    }
-}
-
-/* Responsive untuk HP */
-@media (max-width: 480px) {
-    .portfolio_area .row {
-        margin-bottom: 0;
-    }
 }
